@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Information System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" height="30" class="me-2">
+                Barangay Info System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                    <a href="dashboard.html" class="btn btn-light">Login</a>
+                </form>
+            </div>
+        </div>
+    </nav>    
+
+    <div id="carouselExampleIndicators" class="carousel slide image-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="barangay.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>Barangay Events</h5>
+                    <p>Stay updated with the latest activities in our barangay.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="services.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>Community Services</h5>
+                    <p>Explore the services we offer to serve our residents better.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="landmark.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>Local Landmarks</h5>
+                    <p>Discover the beauty of our barangay’s iconic locations.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>    
+
+    <div class="container my-5" id="gallery" style="background-color: #3d2e26; border-radius: 0.5rem; padding: 2rem;">
+        <h2 class="text-center text-white mb-4">Image Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item position-relative">
+                <img src="landmark.jpg" class="gallery img-fluid rounded" alt="Gallery 1">
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white rounded">
+                    <p>Barangay Hall</p>
+                </div>
+            </div>
+            <div class="gallery-item position-relative">
+                <img src="program.jpg" class="gallery img-fluid rounded" alt="Gallery 2">
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white rounded">
+                    <p>Community Outreach Program</p>
+                </div>
+            </div>
+            <div class="gallery-item position-relative">
+                <img src="park.jpg" class="gallery img-fluid rounded" alt="Gallery 3">
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white rounded">
+                    <p>Barangay Park</p>
+                </div>
+            </div>
+            <div class="gallery-item position-relative">
+                <img src="meeting.jpg" class="gallery img-fluid rounded" alt="Gallery 4">
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white rounded">
+                    <p>Community Meeting</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="container" id="contact">
+        <div class="row my-5">
+            <div class="col-md-6">
+                <h3 class="text-center">Watch Our Video</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/DQfFWASM9n4" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">Find Us Here</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252972.48519577886!2d125.18832850191326!3d7.822063162374262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fee4f56840c151%3A0xe28824c1a610b3da!2sSan%20Fernando%2C%20Bukidnon!5e0!3m2!1sen!2sph!4v1732633955705!5m2!1sen!2sph" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Barangay Information System. All Rights Reserved.</p>
+        <div>
+            <a href="#" class="me-3 text-decoration-none text-white">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="#" class="me-3 text-decoration-none text-white">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="#" class="me-3 text-decoration-none text-white">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
